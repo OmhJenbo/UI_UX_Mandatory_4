@@ -1,0 +1,37 @@
+@import 'styles.css';
+
+article.dish {
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--colorBgArticle);
+}
+
+p.price {
+    margin-top: 1rem;
+    padding: 0.25rem 1rem;
+    display: inline-block;
+    border: thick solid var(--colorBgNav);
+    border-radius: 0.5rem;
+    color: var(--colorMainWhite);
+    background-color: var(--colorList);
+    font-weight: bold;
+    text-align: right;
+}
+
+@media only screen and (min-width: 600px) {
+    img.menu {
+        float: right;
+        margin: 0 0 0 0.5rem;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    article.dish {
+        display: inline-block;
+        width: 45%;
+        margin-left: 2.5rem;
+
+    }
+}

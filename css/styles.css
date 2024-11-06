@@ -1,0 +1,102 @@
+@import 'variables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fontMain);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main {
+    padding: 0.5rem 1rem 1rem;
+    position: relative;
+    top: 0;
+}
+
+header {
+    background-color: var(--colorBgHeader);
+    color: var(--colorMainWhite);
+    padding: 0 1rem;
+    line-height: 5rem;
+    text-indent: 1rem;
+}
+
+ul {
+    padding: 0.5rem;
+}
+
+/* navbar top */
+
+nav {
+    padding: 0 1rem;
+    color: var(--colorMainWhite);
+    background-color: var(--colorBgNav);
+    line-height: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorBgNav);
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--colorMainWhite);
+}
+
+nav li {
+    display: block;
+    text-align: center;
+    border-bottom: thin solid var(--colorMainWhite);
+    color: var(--colorMainWhite);
+    font-family: var(--fontNav);
+}
+
+a:hover {
+    font-size: 1.1rem;
+}
+
+nav a.selected {
+    color: var(--colorSelected);
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 480px) {
+    nav li {
+        display: inline;
+        padding-right: 1rem;
+        border-bottom: none;
+    }
+}
+
+/* colorHomeList */
+
+li {    
+    list-style-type: none;
+    line-height: 1.5rem;
+    font-weight: bold;
+    color: var(--colorBgHeader);
+}
+
+/* image */
+
+img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* footer */
+
+body > footer {
+    margin-top: auto;
+    padding: 0.5rem 0;
+    color: var(--colorMainWhite);
+    background-color: var(--colorBgNav);
+    text-align: center;
+    font-size: 0.8rem;    
+}
